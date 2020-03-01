@@ -1,0 +1,112 @@
+.flex-two-col {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.flex-two-col > * {
+    flex: 1 1 500px;
+    max-width: 48%;
+}
+
+.action {
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+.action > *:not(h2) {
+    margin: 5px 10px;
+}
+
+.action h2 {
+    background: magenta;
+    margin: 0;
+    padding: 10px;
+}
+
+.reaction h2::after {
+    background: url("../images/Reaction.svg") 0 0 /1em no-repeat;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin: auto 10px;
+    width: 1em;
+}
+
+.one-action h2::after {
+    background: url("../images/OneAction.svg") 0 0 /1em no-repeat;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin: auto 10px;
+    width: 1em;
+}
+
+.two-actions h2::after {
+    background: url("../images/TwoActions.svg") 0 0 /1em no-repeat;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin: auto 10px;
+    width: 1em;
+}
+
+.free-action h2::after {
+    background: url("../images/FreeAction.svg") 0 0 /1em no-repeat;
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin: auto 10px;
+    width: 1em;
+}
+
+.traits {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-items: flex-start;
+    list-style: none;
+}
+
+.traits > * {
+    border: 2px solid magenta;
+    flex: 0 0 auto;
+    margin: 1px;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+.action dt {
+    float: left;
+    font-weight: bold;
+    margin: auto 10px auto auto;
+}
+
+.action dt::after {
+    content: ": ";
+    display: inline-block;
+}
+
+table.check-results {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 80%;
+}
+
+table.check-results th, table.check-results td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+table.check-results thead tr th:first-of-type {
+    width: 20%;
+}
+
+table.check-results th {
+    background: #ABABAB;
+}
+
+table.check-results tbody tr td:first-of-type {
+    font-weight: bold;
+}
